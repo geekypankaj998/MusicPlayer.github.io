@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,X-Content-Type-Options: nosniff">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="Project Symbol/icons8-music-48.png" type="image/x-icon">
+  <link rel="stylesheet" href="Styles/index.css">
+  <script src="https://kit.fontawesome.com/2de811935a.js" crossorigin="anonymous"></script>
+  <title>Music Player</title>
+</head>
+
+<body>
+  <div id="navigationUp" class="horizontal-flex fixPosition ">
+    <!---project button -->
+    <div class="horizontal-flex setAlignCenter">
+      <div><img src="Project Symbol/icons8-music-48.png" alt="MainIcon" title="Music Player"></div>
+      <div>
+        <h4><a href="#">Ninja Studio</a></h4>
+      </div>
+    </div>
+    <div>
+      <h5>Favourites</h5>
+    </div>
+
+    <div class="horizontal-flex setAlignCenter" id="search-bar">
+      <button><i class="fas fa-search"></i></button>
+      <input type="text" placeholder="Search">
+      <button><i class="fas fa-microphone"></i></button>
+    </div>
+
+    <div id="notification">
+      <button><i class="fas fa-bell"></i></button>
+    </div>
+
+    <button id="img-container">
+      <img src="UserInfo/profile.png" alt="userProfile" title="User Profile">
+    </button>
+
+  </div>
+  
+  <div id="main" class="borderBox">
+    <div id="left-container" clas="vertical">
+      <div id="left-head" class="horizontal-flex">
+        <div><img src="Carousel Images/taylor2021.jpg" alt="Taylor-Swift-Special"></div>
+        <div><img src="Carousel Images/punjabiValentine.jpg" alt="Punjabi-Special"></div>
+        <div><img src="Carousel Images/moodBooster.jpg" alt="Mood-Booster-Songs"></div>
+      </div>
+      <!-- Latest Releases -->
+      <div class="vertical" id="latest-music-sect">
+        <h4>Latest Releases</h4>
+        <div class="horizontal-flex" id="latest-music-sect-parent">
+
+          <div class="leftSide horizontal-flex scaleContent">
+            <div>
+              <img src="Latest Releases/odd.jpg" alt="">
+            </div>
+            <div class="descipRelease">
+              <p class="MainDescripFont">Havana</p>
+              <p class="dateFont">28-12-2021</p>
+            </div>
+            <div class="vertical">
+              <ul>
+                <li class="dropdown">
+                  <a href="#" class="dropbtn"><i class="fas fa-ellipsis-v"></i></a>
+                  <div class="dropdown-content">
+                    <a href="#">PlayList</a>
+                    <a href="#">Favourite Song</a>
+                  </div>
+                </li>
+              </ul>  
+            </div>
+          </div>
+          <div class="leftSide horizontal-flex scaleContent">
+            <div>
+              <img src="Latest Releases/even.jpg" alt="">
+            </div>
+            <div class="descipRelease">
+              <p class="MainDescripFont">Rock N Roll</p>
+              <p class="dateFont">28-12-2021</p>
+            </div>
+            <div class="lastRow vertical">
+              <ul>
+                <li class="dropdown">
+                  <a href="#" class="dropbtn"><i class="fas fa-ellipsis-v"></i></a>
+                  <div class="dropdown-content">
+                    <a href="#">PlayList</a>
+                    <a href="#">Favourite Song</a>
+                  </div>
+                </li>
+              </ul> 
+            </div>
+          </div>
+          <div class="leftSide horizontal-flex scaleContent">
+            <div>
+              <img src="Latest Releases/odd.jpg" alt="">
+            </div>
+            <div class="descipRelease">
+              <p class="MainDescripFont">Rock N Roll</p>
+              <p class="dateFont">28-12-2021</p>
+            </div>
+            <div class="lastRow vertical">
+              <ul>
+                <li class="dropdown">
+                  <a href="#" class="dropbtn"><i class="fas fa-ellipsis-v"></i></a>
+                  <div class="dropdown-content">
+                    <a href="#">PlayList</a>
+                    <a href="#">Favourite Song</a>
+                  </div>
+                </li>
+              </ul> 
+            </div>
+          </div>
+          <div class="leftSide horizontal-flex scaleContent">
+            <div>
+              <img src="Latest Releases/even.jpg" alt="">
+            </div>
+            <div class="descipRelease">
+              <p class="MainDescripFont">Havana</p>
+              <p class="dateFont">28-12-2021</p>
+            </div>
+            <div class="lastRow vertical">
+              <ul>
+                <li class="dropdown">
+                  <a href="#" class="dropbtn"><i class="fas fa-ellipsis-v"></i></a>
+                  <div class="dropdown-content">
+                    <a href="#">PlayList</a>
+                    <a href="#">Favourite Song</a>
+                  </div>
+                </li>
+              </ul> 
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--  Popular Artists                       -->
+      <div class="vertical">
+        <div>
+          <h4>Popular Artists</h4>
+        </div>
+        <div class="horizontal-flex common-styling-parent">
+
+
+          <div class="vertical ">
+            <div class="flex-design-horizon special-horizontal-flex borderShine roundedBorder borderBox" id="artist1">
+              <a href="artistProfile.html"><i class="fas fa-play"></i></a>
+            </div>
+
+            <h5>Ed Sheerun</h5>
+          </div>
+
+
+          <div class="vertical">
+            <div class="flex-design-horizon special-horizontal-flex borderShine roundedBorder borderBox" id="artist2">
+             <a href="artistProfile.html"><i class="fas fa-play"></i></a>
+            </div>
+             
+            <h5>ColdPlay</h5>
+          </div>
+ 
+
+          <div class="vertical ">
+            <div class="flex-design-horizon special-horizontal-flex borderShine roundedBorder borderBox" id="artist3">
+             <a href="artistProfile.html"><i class="fas fa-play"></i></a>
+            </div>
+
+            <h5>Zayn Malik</h5>
+          </div>
+
+
+          <div class="vertical ">
+            <div class="flex-design-horizon special-horizontal-flex borderShine roundedBorder borderBox" id="artist4">
+             <a href="artistProfile.html"><i class="fas fa-play"></i></a>
+            </div>
+
+            <h5>Imagine Dragon</h5>
+          </div>
+
+
+          <div class="vertical ">
+            <div class="flex-design-horizon special-horizontal-flex borderShine roundedBorder borderBox" id="artist5">
+             <a href="artistProfile.html"><i class="fas fa-play"></i></a>
+            </div>
+
+            <h5>Bruno Mars</h5>
+          </div>
+
+          <div class="vertical ">
+            <div class="flex-design-horizon special-horizontal-flex borderShine roundedBorder borderBox" id="artist6">
+             <a href="artistProfile.html"><i class="fas fa-play"></i></a>
+            </div>
+
+            <h5>Charlie Path</h5>
+          </div>
+
+        </div>
+      </div>
+
+
+
+      <!-- //Stations -->
+
+      <div class="horizontal-flex common-styling-parent" id="station-block">
+
+        <div class="vertical borderBox">
+          <div class="flex-design-horizon  station-design scaleContent  roundedBorder" id="station1">
+            <h4>Stations</h4>
+          </div>
+
+        </div>
+
+        <div class="vertical borderBox">
+          <div class="flex-design-horizon station-design scaleContent roundedBorder" id="station2">
+            <h4>Love</h4>
+          </div>
+ 
+        </div>
+
+        <div class="vertical borderBox">
+          <div class="flex-design-horizon station-design scaleContent roundedBorder" id="station3">
+            <h4>Chill</h4>
+          </div>
+
+        </div>
+
+        <div class="vertical borderBox">
+          <div class="flex-design-horizon station-design scaleContent roundedBorder" id="station4">
+            <h4>Gym</h4>
+          </div>
+
+        </div>
+
+        <div class="vertical borderBox">
+          <div class="flex-design-horizon station-design scaleContent roundedBorder" id="station5">
+            <h4>Pop</h4>
+          </div>
+
+        </div>
+
+        <div class="vertical borderBox">
+          <div class="flex-design-horizon station-design scaleContent roundedBorder" id="station6">
+            <h4>Rock</h4>
+          </div>
+
+        </div>
+        <div class="vertical borderBox">
+          <div class="flex-design-horizon station-design scaleContent roundedBorder" id="station7">
+            <h4>Retro</h4>
+          </div>
+ scaleContent
+        </div>
+      </div>
+
+      <div class="horizontal-flex common-styling-parent" id="type-block">
+        <div class="flex-design-horizon background-image-setup horizontal-flex borderBox" id="type1">
+          <h4>Electronic</h4>
+        </div>
+        <div class="flex-design-horizon background-image-setup horizontal-flex borderBox" id="type2">
+          <h4>Party</h4>
+        </div>
+        <div class="flex-design-horizon background-image-setup horizontal-flex borderBox" id="type3">
+          <h4>Road Trip</h4>
+        </div>
+      </div>
+
+
+      <div class="vertical"> roundedBorder
+        <div>
+          <h4>Latest Hindi</h4>
+        </div>
+        <div class="horizontal-flex common-styling-parent" id="lastest-Song">
+
+          <div class="vertical latest-items">
+            <div class="flex-design-horizon background-image-setup normal-border-radius scaleContent" id="latest1">
+            </div>
+            <p class="MainDescripFont">Raatan </p>
+            <p class="dateFont">28-12-2021</p>
+
+          </div>
+
+
+          <div class="vertical latest-items">
+            <div class="flex-design-horizon background-image-setup normal-border-radius scaleContent" id="latest2">
+            </div>
+            <p class="MainDescripFont">Gud Naal</p>
+            <p class="dateFont">28-12-2021</p>
+
+          </div>
+
+
+          <div class="vertical latest-items">
+            <div id="latest3" class="flex-design-horizon background-image-setup normal-border-radius scaleContent">
+            </div>
+            <p class="MainDescripFont">Yaara Teri</p>
+            <p class="dateFont">28-12-2021</p>
+          </div>
+
+
+          <div class="vertical latest-items">
+            <div class="flex-design-horizon background-image-setup normal-border-radius scaleContent" id="latest4">
+
+            </div>
+            <p class="MainDescripFont">Maahi Ve</p>
+            <p class="dateFont">28-12-2021</p>
+
+          </div>
+
+
+          <div class="vertical latest-items">
+            <div class="flex-design-horizon  background-image-setup normal-border-radius scaleContent" id="latest5">
+
+            </div>
+
+            <p class="MainDescripFont">College</p>
+            <p class="dateFont">28-12-2021</p>
+          </div>
+
+          <div class="vertical latest-items">
+            <div class="flex-design-horizon background-image-setup normal-border-radius scaleContent" id="latest6">
+
+            </div>
+
+            <p class="MainDescripFont">Aish Krde</p>
+            <p class="dateFont">28-12-2021</p>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="vertical">
+        <div>
+          <h4>Latest English</h4>
+        </div>
+        <div class="horizontal-flex common-styling-parent" id="lastest-Song">
+
+          <div class="vertical latest-items">
+            <div class="flex-design-horizon background-image-setup normal-border-radius scaleContent" id="latest-eng-1">
+            </div>
+            <p class="MainDescripFont">MIA</p>
+            <p class="dateFont">28-12-2021</p>
+
+          </div>
+
+
+          <div class="vertical latest-items">
+            <div class="flex-design-horizon background-image-setup normal-border-radius scaleContent" id="latest-eng-2">
+            </div>
+            <p class="MainDescripFont">Blank Space</p>
+            <p class="dateFont">28-12-2021</p>
+
+          </div>
+
+
+          <div class="vertical latest-items">
+            <div id="latest-eng-3" class="flex-design-horizon background-image-setup normal-border-radius scaleContent">
+            </div>
+            <p class="MainDescripFont">Friends</p>
+            <p class="dateFont">28-12-2021</p>
+
+          </div>
+
+
+          <div class="vertical latest-items">
+            <div class="flex-design-horizon background-image-setup normal-border-radius scaleContent" id="latest-eng-4">
+
+            </div>
+            <p class="MainDescripFont">Lean On</p>
+            <p class="dateFont">28-12-2021</p>
+
+          </div>
+
+
+          <div class="vertical latest-items">
+            <div class="flex-design-horizon  background-image-setup normal-border-radius scaleContent" id="latest-eng-5">
+
+            </div>
+
+            <p class="MainDescripFont">Magnet</p>
+            <p class="dateFont">28-12-2021</p>
+          </div>
+
+          <div class="vertical latest-items">
+            <div class="flex-design-horizon background-image-setup normal-border-radius scaleContent" id="latest-eng-6">
+
+            </div>
+
+            <p class="MainDescripFont">Taki Taki</p>
+            <p class="dateFont">28-12-20
+          </div>
+
+        </div>
+      </div>
+
+
+
+    </div>
+    <!-- Right Container -->
+    <div id="right-container" class="vertical borderBox">
+        
+      
+      <div class="horizontal-flex" id="aside-head-block">
+        <div>
+          <h3>My Playlist</h3>
+        </div>
+        <div>Queue</div>
+      </div>
+        
+       
+
+
+      <div class="leftSide horizontal-flex">
+        <div>
+          1
+        </div>
+        <div>
+          <img src="Latest Releases/even.jpg" alt="">
+        </div>
+        <div class="descipRelease">
+          <p class="MainDescripFont">Havana</p>
+
+        </div>
+        <div class="lastRow no-Rotation">
+          <button type="" title="options"><i class="far fa-heart"></i></button>
+        </div>
+      </div>
+
+
+      
+        <div class="leftSide horizontal-flex">
+          <div>
+            2
+          </div>
+          <div>
+            <img src="Latest Releases/odd.jpg" alt="">
+          </div>
+          <div class="descipRelease">
+            <p class="MainDescripFont">Havana</p>
+
+          </div>
+          <div class="lastRow no-Rotation">
+            <button type="" title="options"><i class="far fa-heart"></i></button>
+          </div>
+        </div>
+
+      
+      
+        <div class="leftSide horizontal-flex">
+          <div>
+            3
+          </div>
+          <div>
+            <img src="Latest Releases/even.jpg" alt="">
+          </div>
+          <div class="descipRelease">
+            <p class="MainDescripFont">Havana</p>
+
+          </div>
+          <div class="lastRow no-Rotation">
+            <button type="" title="options"><i class="far fa-heart"></i></button>
+          </div>
+        </div>
+      
+      
+        <div class="leftSide horizontal-flex">
+          <div>
+            4
+          </div>
+          <div>
+            <img src="Latest Releases/odd.jpg" alt="">
+          </div>
+          <div class="descipRelease">
+            <p class="MainDescripFont">Havana</p>
+
+          </div>
+          <div class="lastRow no-Rotation">
+            <button type="" title="options"><i class="far fa-heart"></i></button>
+          </div>
+        </div>
+      
+      
+        <div class="leftSide horizontal-flex">
+          <div>
+            5
+          </div>
+          <div>
+            <img src="Latest Releases/even.jpg" alt="">
+          </div>
+          <div class="descipRelease">
+            <p class="MainDescripFont">Havana</p>
+
+          </div>
+          <div class="lastRow no-Rotation">
+            <button type="" title="options"><i class="far fa-heart"></i></button>
+          </div>
+        </div>
+      
+      
+        <div class="leftSide horizontal-flex">
+          <div>
+            6
+          </div>
+          <div>
+            <img src="Latest Releases/odd.jpg" alt="">
+          </div>
+          <div class="descipRelease">
+            <p class="MainDescripFont">Havana</p>
+
+          </div>
+          <div class="lastRow no-Rotation">
+            <button type="" title="options"><i class="far fa-heart"></i></button>
+          </div>
+        </div>
+      
+      
+        <div class="leftSide horizontal-flex">
+          <div>
+            7
+          </div>
+          <div>
+            <img src="Latest Releases/even.jpg" alt="">
+          </div>
+          <div class="descipRelease">
+            <p class="MainDescripFont">Havana</p>
+
+          </div>
+          <div class="lastRow no-Rotation">
+            <button type="" title="options"><i class="far fa-heart"></i></button>
+          </div>
+        </div>
+      
+      
+        <div class="leftSide horizontal-flex">
+          <div>
+            8
+          </div>
+          <div>
+            <img src="Latest Releases/odd.jpg" alt="">
+          </div>
+          <div class="descipRelease">
+            <p class="MainDescripFont">Havana</p>
+
+          </div>
+          <div class="lastRow no-Rotation">
+            <button type="" title="options"><i class="far fa-heart"></i></button>
+          </div>
+        </div>
+      
+      
+        <div class="leftSide horizontal-flex">
+          <div>
+            9
+          </div>
+          <div>
+            <img src="Latest Releases/even.jpg" alt="">
+          </div>
+          <div class="descipRelease">
+            <p class="MainDescripFont">Havana</p>
+
+          </div>
+          <div class="lastRow no-Rotation">
+            <button type="" title="options"><i class="far fa-heart"></i></button>
+          </div>
+        </div>
+
+    </div>
+  </div>
+  <div id="controlMusic" class="horizontal-flex">
+    
+      <div class="leftSide horizontal-flex" id="bottom-music-info">
+        
+          <img src="Latest Releases/even.jpg" alt="">
+        
+        <div class="descipRelease vertical">
+          <p class="MainDescripFont">Havana</p>
+          <p class="dateFont">Lucca</p>
+        </div>
+        <div class="lastRow no-Rotation">
+          <button type="" title="options"><i class="far fa-heart"></i></button>
+        </div>
+      </div>
+     
+     <div class="vertical" id="bottom-middle">
+        <div class="horizontal-flex">
+          <i class="fas fa-random"></i>
+          <i class="fas fa-backward"></i>
+          <i class="far fa-pause-circle"></i>
+          <i class="fas fa-forward"></i>
+          <i class="fas fa-sync"></i>
+        </div>
+        <div id="input-range">
+          <input type="range" min="0" max="100">
+        </div> 
+      </div>   
+      <div>
+          <i class="fas fa-volume-up"></i> <input type="range" min="0" max="100">
+      </div>
+    </div>
+  
+</body>
+
+</html>

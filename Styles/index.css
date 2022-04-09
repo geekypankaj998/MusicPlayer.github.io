@@ -1,0 +1,605 @@
+/* Generic Prop */
+body{
+  background-color:#0c1027;
+  padding:0;
+  margin:0;
+  color:white;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size:20px;
+}
+a{
+  text-decoration:none;
+  list-style: none;
+  color:white;
+}
+.backgroundLight{
+  background-color:#12193e;
+}
+
+.roundedBorder{
+  border-radius : 50%;
+}
+
+.horizontal-flex{
+  display:flex;
+}
+
+.fixPosition{
+  position:fixed;
+}
+
+.vertical{                               
+  display:flex;
+  flex-direction:column;
+  justify-content: space-around;
+}
+.borderBox{
+  box-sizing: border-box;
+}
+.scaleContent:hover{
+  transform:scale(1.1);
+  opacity:1;
+}
+img{
+  object-fit: contain;
+}
+.setAlignCenter{
+  align-items: center;
+}
+.vertical{                               
+  display:flex;
+  flex-direction:column;
+  justify-content: space-around;
+}
+img{
+  display:inline-block;
+  width:100%;
+  height:100%;
+  object-fit:contain;
+}
+.borderShine:hover{
+  border:2px solid white;
+}
+.normal-border-radius{
+  border-radius: none;
+}
+/* Specific To Buisness */
+/* Top Most NavBar */
+#navigationUp{
+  top:0;
+  width:100%;
+  height:10vh;
+  justify-content: space-around;
+  align-items:center;
+  background-color:#0c1027;
+  z-index:1;
+  font-size:1.5rem;
+}
+
+#navigationUp i{
+  display:block;
+  font-size:1rem;
+}
+#notification button{
+  color:white;
+  background-color:#0c1027;
+  border:0;
+}
+
+#img-container{
+  width:50px;
+  height:50px;
+  border-radius:50%;
+}
+#img-container img{
+  display:inline-block;
+  width:100%;
+  height:100%;
+}
+#search-bar{
+  box-sizing:border-box;
+  margin:15px 0;
+  align-items:center;
+  background-color:#0c1027;
+  padding:10px;
+  border-radius: 30%;;
+  color:white;
+}
+#search-bar i,#search-bar input,#search-bar button {
+  background-color:#0c1027;
+  color:white;
+  border:0;
+  padding:3px;
+}
+#search-bar input{
+  border:0.5px solid white;
+  border-radius:2px;
+  background-color:#12193e;
+}
+#navigationUp button:hover{
+  border-radius: 50%;
+  border:0.5px solid white;
+}
+
+/* Main Content */
+#main{
+  margin-top:75px;
+  box-sizing:border-box;
+  max-width:3000px;
+  display:flex;
+  flex-direction:row;
+  height:inherit;
+  flex-wrap:wrap;
+  vertical-align: center;
+  width:inherit;
+  padding:10px 20px;
+  justify-content:space-around;
+}
+
+#left-container{
+  width:75%; 
+  height:100%;
+}
+#right-container{
+  width:20%;
+  height:100%;
+}
+#left-head{
+  width:100%;
+  justify-content:space-around ;
+  align-items:center;
+}
+#left-head div{
+  width:30%;
+  height:30%;
+  opacity:0.6;
+  transition: all 0.1s ease-out ;
+}
+
+#left-head div img{
+  width:100%;
+  height:100%;
+  object-fit: cover;
+}
+#left-head div:hover{
+  transform:scale(1.2);
+  opacity:1;
+}
+
+#latest-music-sect{
+  margin-top:15px;
+}
+#latest-music-sect h4{
+  margin-bottom:0px;
+}
+#latest-music-sect-parent{
+ flex-wrap:wrap;
+ align-content: start;
+ width:inherit;
+ height:auto;
+}
+#latest-music-sect-parent div{
+  width:400px;
+  height:120px;
+  flex-grow:1;
+  box-sizing: border-box;
+  padding:5px;
+}
+
+.leftSide i{
+  transform: rotate(90deg);  
+  padding:0;
+}
+.lastRow{
+  text-align: right;;
+}
+.MainDescripFont{
+  font-size:1rem;
+  font-weight:700;
+}
+.dateFont{
+  font-size:0.7rem;
+  font-weight:500;
+}
+
+.lastRow a{                            
+  background-color:#0c1027;
+  border:none;
+}
+
+#optionList{
+  display: none;
+}
+
+/* Adding DropDown */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-size:0.5rem;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  box-sizing:border-box;
+  color: white;
+  text-align: center;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color:rgb(61, 89, 247);
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  max-width: 80px;
+  max-height:80px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  background-color: #f9f9f9;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  font-size: 0.8rem;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Common Style Structure Used in many Sections of LeftHand Section */
+.common-styling-parent{
+  width:100%;
+  height:auto;
+  justify-content:space-between;
+  flex-wrap:wrap;
+}
+.common-styling-parent div{
+  width:125px;
+}
+#artist1{
+  background : url("../Artist/Ed_Sheeran-6886_(cropped).jpg");
+    background-position:center;
+  background-size:cover;
+
+}
+#artist2{
+  background : url("../Artist/coldplay.jpg");
+    background-position:center;
+  background-size:cover;
+
+}
+#artist3{
+  background : url("../Artist/zayn.jpg");
+    background-position:center;
+  background-size:cover;
+}
+#artist4{
+  background : url("../Artist/imagineDragon.jpg");
+    background-position:center;
+  background-size:cover;
+}
+#artist5{
+  background : url("../Artist/brunoMars.jpg");
+    background-position:center;
+  background-size:cover;
+}
+#artist6{
+  background : url("../Artist/charliePath.jpg");
+    background-position:center;
+  background-size:cover;
+}
+
+
+.common-styling-parent .vertical{
+  align-content:center;
+  text-align:center;
+}
+
+.station-design{
+  text-align:center;
+  font-weight:700;
+}
+
+/* Station Block */
+.station-design h4{
+  color:rgb(247, 251, 252);
+
+}
+#station1{
+  background : url("../Genres/stations.jpg");
+  background-position:center;
+  background-size:cover;
+ 
+}
+#station2{
+  background : url("../Genres/love.jpg");
+  background-position:center;
+  background-size:cover;
+}
+#station3{
+  background : url("../Genres/chill.jpg");
+    background-position:center;
+  background-size:cover;
+}
+#station4{
+  background : url("../Genres/gym.jpg");
+    background-position:center;
+  background-size:cover;
+}
+#station5{
+  background : url("../Genres/pop.jpg");
+  background-position:center;
+  background-size:cover;
+}
+#station6{
+  background : url("../Genres/rock.jpg");
+    background-position:center;
+  background-size:cover;
+}
+#station7{
+  background :url("../Genres/retro.jpg");
+    background-position:center;
+  background-size:cover;
+}
+
+#station-block {
+  background-color:#12193e;
+  justify-content:space-around;
+  align-items: center;
+  padding: 15px;
+  box-sizing: border-box;
+}
+#station-block div{
+  width:100px;
+  height:100px;
+}
+#station-block div.vertical{
+  box-sizing:border-box;
+  width:100px;
+}
+
+.flex-design-horizon{
+  height:125px;
+}
+.station-design{
+  height:100px;
+}
+.station-design:hover{
+  color:orange;
+}
+/* Types of Music Like Electronic etc one */
+#type-block{
+  margin-top:10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#type-block div{
+  width:350px;
+  height:150px;
+  border-radius:0;
+  justify-content: center;
+  align-items: center;
+  font-weight:800;
+  font-size:1.5rem;
+}
+#type-block div:hover{
+  border:10px solid white;
+}
+.background-image-setup{
+  background-position:center;
+  background-size:cover;
+}
+#type1{
+  background-image: url(../Types/electronic.jpg);
+}
+#type2{
+  background-image: url(../Types/partyFinal.jpg);
+}
+#type3{
+  background-image: url(../Types/road.jpg);
+}
+/* Latest Hindi Links to Resources */
+#latest1{
+  background :url("../Latest\ Hindi/Raatan.jpg");
+    background-position:center;
+  background-size:cover;
+}
+#latest2{
+  background :url("../Latest\ Hindi/GudNaal.jpg");
+    background-position:center;
+  background-size:cover;
+}
+#latest3{
+  background :url("../Latest\ Hindi/yaara.jpg");
+    background-position:center;
+  background-size:cover;
+}
+#latest4{
+  background :url("../Latest\ Hindi/mahiVe.jpg");
+    background-position:center;
+  background-size:cover;
+}
+#latest5{
+  background :url("../Latest\ Hindi/college.jpg");
+    background-position:center;
+  background-size:cover;
+}
+#latest6{
+  background :url("../Latest\ Hindi/Aish-Karde.jpg");
+    background-position:center;
+  background-size:cover;
+}
+.latest-items{
+  justify-content: center;
+}
+.latest-items p{
+  margin:10px 0px;
+}
+.latest-items .dateFont{
+  margin-top: 0px;
+}
+/* Latest English */
+#latest-eng-1{
+  background :url("../Latest\ English/drake.jpg");
+    background-position:center;
+  background-size:cover;
+}
+#latest-eng-2{
+  background :url("../Latest\ English/blankspace.jpg");
+    background-position:center;
+  background-size:cover;
+}
+#latest-eng-3{
+  background :url("../Latest\ English/friends.jpg");
+    background-position:center;
+  background-size:cover;
+}
+#latest-eng-4{
+  background :url("../Latest\ English/LeanOnMe.jpg");
+    background-position:center;
+  background-size:cover;
+}
+#latest-eng-5{
+  background :url("../Latest\ English/magnet.jpg");
+    background-position:center;
+  background-size:cover;
+}
+#latest-eng-6{
+  background :url("../Latest\ English/taki.jpg");
+    background-position:center;
+  background-size:cover;
+}
+
+/* Right Container */
+#right-container {
+  align-content:flex-start; 
+  justify-content:start;
+  align-self: start;
+  background:#0c1027;
+  height:10%;
+}
+
+#right-container div{
+ max-height:50px; 
+ padding:5px 0;
+}
+#right-container div img{
+  height:90%;
+}
+
+#right-container p{
+  margin:0;
+}
+#right-container .horizontal-flex{
+  justify-content: space-around;
+}
+#aside-head-block{
+  box-sizing:border-box;
+}
+.no-Rotation i{
+  transform : rotate(0deg);
+}
+#aside-head-block h3{
+  margin:0;
+}
+
+
+/* Control Music */
+#controlMusic{
+  position:fixed;
+  bottom:0;
+  width:100%;
+  background-color:#282828;
+  height:8%;
+  box-sizing:border-box;
+  padding:4px 10px;
+  align-items:center;
+  justify-content: space-between;
+}
+#controlMusic i{
+  display:inline-block;
+}
+#controlMusic > div{
+  height:40px;
+  width:25%;
+}
+#controlMusic img{
+  object-fit: contain;
+}
+#bottom-music-info {
+  width:40px;
+  align-items:center;
+}
+#bottom-music-info i,#bottom-music-info button {
+  background-color:#282828;
+}
+#bottom-music-info p{
+  margin:0;
+}
+#bottom-middle .horizontal-flex{
+  justify-content:space-between;
+}
+#bottom-middle i{
+  display:block;
+  width:15%;
+}
+#bottom-middle input{
+  width:100%;
+}
+
+/* The play button styles that is used to reach to next artist page and is present on the name block of each artist image */
+.special-horizontal-flex{
+  position:relative;
+}
+.special-horizontal-flex a i{
+  display:none;
+}
+.special-horizontal-flex:hover a i{
+  display:inline-block;
+  position:absolute;
+  left:45%;
+  top:40%;
+  color:white;
+  font-size:1.5rem;
+  text-shadow:4px 4px 8px grey ;
+
+}
+
+@media screen and (max-width:700px){
+   #main{
+     display:flex;
+     width:100%;
+   }
+   body{
+     font-size:10px;
+   }
+   #left-container{
+      width:100%;
+   }
+   #right-container{
+     width:100%;
+   }
+   .common-styling-parent{
+     display:flex;
+     justify-content:center;
+     align-items:center;
+   }
+}

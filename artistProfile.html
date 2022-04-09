@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="Project Symbol/icons8-music-48.png" type="image/x-icon">
+  <script src="https://kit.fontawesome.com/2de811935a.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="Styles/index.css">
+  <link rel="stylesheet" href="Styles/artistProfile.css">
+  <title>Artist Info</title>
+</head>
+<body>
+  <div id="navigationUp" class="horizontal-flex fixPosition">
+    <!---                                                    project button -->
+    <div class="horizontal-flex setAlignCenter">
+      <div><img src="Project Symbol/icons8-music-48.png" alt="MainIcon" title="Music Player"></div>
+      <div>
+        <h4><a href="index.html">Ninja Studio</a></h4>
+      </div>
+    </div>
+    <div>
+      <h5>Favourites</h5>
+    </div>
+
+    <div class="horizontal-flex setAlignCenter" id="search-bar">
+      <button><i class="fas fa-search"></i></button>
+      <input type="text" placeholder="Search">
+      <button><i class="fas fa-microphone"></i></button>
+    </div>
+
+    <div id="notification">
+      <button><i class="fas fa-bell"></i></button>
+    </div>
+
+    <button id="img-container">
+      <img src="UserInfo/profile.png" alt="userProfile" title="User Profile">
+    </button>
+
+  </div>
+  <div id="main">
+    <div id="left-container" clas="vertical">
+
+      <!-- Latest Releases -->
+      <div class="vertical" id="latest-music-sect">
+        <div id="artist-block" class="horizontal-flex scaleContent">
+           <div id="artist-image"></div>
+           <div id="artist-info"class="vertical">
+            <div class="horizontal-flex">
+              <h2>Cold Play</h2>
+              <p class="dateFont color-grey">851 Followers</p>
+            </div> 
+            <div class="color-grey">British Band</div>
+            <div>
+              <p  class="color-grey artist-blog">
+               Coldplay are a British rock band formed in London in 1996. The band consists of vocalist, rhythm guitarist, and pianist Chris Martin, lead guitarist Jonny Buckland, bassist Guy Berryman, drummer Will Champion and creative director Phil Harvey.They met at the University College London and began playing music together from 1996 to 1998, first calling themselves Pectoralz and then Starfish. 
+              </p>
+            </div>
+            <div>
+              <button class="subscribe-Button">Play All</button>
+            </div>
+           </div>
+           
+        </div>
+        <div class="horizontal-flex" id="latest-music-sect-parent">
+
+          <div class="leftSide horizontal-flex borderBox ">
+            <div class="scaleContent">
+              <img src="Latest Releases/odd.jpg" alt="">
+            </div>
+            <div>
+              <p class="MainDescripFont ">Havana</p>
+              <p class="dateFont ">28-12-2021</p>
+            </div>
+            <div class="lastRow ">
+              <button type="" title="options"><i class="fas fa-ellipsis-v"></i></button>
+            </div>
+            
+          </div>
+          <div class="leftSide horizontal-flex borderBox  ">
+            <div class="scaleContent">
+              <img src="Latest Releases/even.jpg" alt="">
+            </div>
+            <div >
+              <p class="MainDescripFont ">Rock N Roll</p>
+              <p class="dateFont ">28-12-2021</p>
+            </div>
+            <div class="lastRow ">
+              <button type="" title="options"><i class="fas fa-ellipsis-v"></i></button>
+            </div>
+          </div>
+          <div class="leftSide horizontal-flex borderBox ">
+            <div class="scaleContent">
+              <img src="Latest Releases/odd.jpg" alt="">
+            </div>
+            <div >
+              <p class="MainDescripFont ">Rock N Roll</p>
+              <p class="dateFont ">28-12-2021</p>
+            </div>
+            <div class="lastRow ">
+              <button type="" title="options"><i class="fas fa-ellipsis-v"></i></button>
+            </div>
+          </div>
+          <div class="leftSide horizontal-flex borderBox ">
+            <div class="scaleContent">
+              <img src="Latest Releases/even.jpg" alt="">
+            </div>
+            <div>
+              <p class="MainDescripFont ">Havana</p>
+              <p class="dateFont ">28-12-2021</p>
+            </div>
+            <div class="lastRow ">
+              <button type="menu"  title="options"><i class="fas fa-ellipsis-v"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--  Popular Artists                       -->
+      
+    </div>
+
+
+    <!-- Right Container -->
+    <div id="right-container" class="vertical">
+        
+      
+      <div class="horizontal-flex" id="aside-head-block">
+       
+          <div>
+            <h3>My Playlist</h3>
+          </div>
+          
+            <ul>
+              <li class="dropdown">
+                <a href="#" id="aside-sect-head" class="dropbtn">Queue<i class="fas fa-arrow-down"></i></a>
+                <div class="dropdown-content">
+                  <a href="#">PlayList</a>
+                  <a href="#">Favourite Song</a>
+                </div>
+              </li>
+            </ul> 
+          </div>
+ 
+      <div class="leftSide horizontal-flex">
+        <div>
+          1
+        </div>
+        <div>
+          <img src="Latest Releases/even.jpg" alt="">
+        </div>
+        <div class="descipRelease">
+          <p class="MainDescripFont">Havana</p>
+
+        </div>
+        <div class="lastRow no-Rotation">
+          <button type="" title="options"><i class="far fa-heart"></i></button>
+        </div>
+      </div>
+
+      <div class="leftSide horizontal-flex">
+          <div>
+            2
+          </div>
+          <div>
+            <img src="Latest Releases/odd.jpg" alt="">
+          </div>
+          <div class="descipRelease">
+            <p class="MainDescripFont">Havana</p>
+
+          </div>
+          <div class="lastRow no-Rotation">
+            <button type="" title="options"><i class="far fa-heart"></i></button>
+          </div>
+      </div>
+
+      <div class="leftSide horizontal-flex">
+          <div>
+            3
+          </div>
+          <div>
+            <img src="Latest Releases/even.jpg" alt="">
+          </div>
+          <div class="descipRelease">
+            <p class="MainDescripFont">Havana</p>
+
+          </div>
+          <div class="lastRow no-Rotation">
+            <button type="" title="options"><i class="far fa-heart"></i></button>
+          </div>
+      </div>
+      
+      
+      <div class="leftSide horizontal-flex">
+          <div>
+            4
+          </div>
+          <div>
+            <img src="Latest Releases/odd.jpg" alt="">
+          </div>
+          <div class="descipRelease">
+            <p class="MainDescripFont">Havana</p>
+
+          </div>
+          <div class="lastRow no-Rotation">
+            <button type="" title="options"><i class="far fa-heart"></i></button>
+          </div>
+      </div>
+
+      <div class="leftSide horizontal-flex">
+          <div>
+            5
+          </div>
+          <div>
+            <img src="Latest Releases/even.jpg" alt="">
+          </div>
+          <div class="descipRelease">
+            <p class="MainDescripFont">Havana</p>
+
+          </div>
+          <div class="lastRow no-Rotation">
+            <button type="" title="options"><i class="far fa-heart"></i></button>
+          </div>
+        </div>
+      
+      
+        <div class="leftSide horizontal-flex">
+          <div>
+            6
+          </div>
+          <div>
+            <img src="Latest Releases/odd.jpg" alt="">
+          </div>
+          <div class="descipRelease">
+            <p class="MainDescripFont">Havana</p>
+
+          </div>
+          <div class="lastRow no-Rotation">
+            <button type="" title="options"><i class="far fa-heart"></i></button>
+          </div>
+        </div>
+      
+      
+        <div class="leftSide horizontal-flex">
+          <div>
+            7
+          </div>
+          <div>
+            <img src="Latest Releases/even.jpg" alt="">
+          </div>
+          <div class="descipRelease">
+            <p class="MainDescripFont">Havana</p>
+
+          </div>
+          <div class="lastRow no-Rotation">
+            <button type="" title="options"><i class="far fa-heart"></i></button>
+          </div>
+        </div>
+      
+      
+        <div class="leftSide horizontal-flex">
+          <div>
+            8
+          </div>
+          <div>
+            <img src="Latest Releases/odd.jpg" alt="">
+          </div>
+          <div class="descipRelease">
+            <p class="MainDescripFont">Havana</p>
+
+          </div>
+          <div class="lastRow no-Rotation">
+            <button type="" title="options"><i class="far fa-heart"></i></button>
+          </div>
+        </div>
+      
+      
+        <div class="leftSide horizontal-flex">
+          <div>
+            9
+          </div>
+          <div>
+            <img src="Latest Releases/even.jpg" alt="">
+          </div>
+          <div class="descipRelease">
+            <p class="MainDescripFont">Havana</p>
+
+          </div>
+          <div class="lastRow no-Rotation">
+            <button type="" title="options"><i class="far fa-heart"></i></button>
+          </div>
+        </div>
+
+    </div>
+  </div>  
+  
+</body>
+</html>
